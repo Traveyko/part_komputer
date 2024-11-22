@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - CORES PART STORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fc;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    .sidebar .sidebar-header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      border-radius: 10px 10px 0 0;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .card-body {
+      background-color: #ffffff;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">CORES PART STORE</div>
+    <a href="#">Profile</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1 class="text-center">CORES PART STORE</h1>
+    <div class="row mt-4">
+      <!-- Card Barang 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/3/23/4db2e598-5bce-4259-b0f0-345a5b3d352b.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 1">
+          <div class="card-body">
+            <h5 class="card-title">Intel I3</h5>
+            <p class="card-text">Harga: Rp500.000</p>
+            <a href="detail.html?id=1" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/1/8/f1975496-c7b7-4221-ad05-33cebe9f18fb.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 2">
+          <div class="card-body">
+            <h5 class="card-title">Intel I5</h5>
+            <p class="card-text">Harga: Rp1.000.000</p>
+            <a href="detail.html?id=2" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/3/20/7198303f-f33f-4f94-aa11-68f055f74ec1.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 3">
+          <div class="card-body">
+            <h5 class="card-title">Intel I7</h5>
+            <p class="card-text">Harga: Rp1.500.000</p>
+            <a href="detail.html?id=3" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/4/22/444bb6a6-545f-4d7f-834f-30d6f216832a.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 4">
+          <div class="card-body">
+            <h5 class="card-title">AMD RYZEN 5700X</h5>
+            <p class="card-text">Harga: Rp750.000</p>
+            <a href="detail.html?id=4" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 5 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/9/28/f4ebaeb1-735b-4fa1-840c-040c7ad506b7.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 5">
+          <div class="card-body">
+            <h5 class="card-title">AMD RYZEN 5 7600X</h5>
+            <p class="card-text">Harga: Rp600.000</p>
+            <a href="detail.html?id=5" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 6 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/31/06a639d6-0e7e-45fe-af2f-098da9c1596d.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 6">
+          <div class="card-body">
+            <h5 class="card-title">AMD RYZEN 5 8600G</h5>
+            <p class="card-text">Harga: Rp800.000</p>
+            <a href="detail.html?id=6" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 7 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/9/9/aa60e75d-3758-47ba-b93f-1fb738dd04fa.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 7">
+          <div class="card-body">
+            <h5 class="card-title">AMD RYZEN 9 5900X</h5>
+            <p class="card-text">Harga: Rp1.200.000</p>
+            <a href="detail.html?id=7" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 8 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/13/f92ffa92-bf15-4bdd-919b-718cd13b4b89.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 8">
+          <div class="card-body">
+            <h5 class="card-title">KLEVV BOLT V DDR5 PC51200    </h5>
+            <p class="card-text">Harga: Rp1.800.000</p>
+            <a href="detail.html?id=8" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 9 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/11/317331a0-7474-4571-9344-d6873fd7af62.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 9">
+          <div class="card-body">
+            <h5 class="card-title">RAM IMPERION RGB DDR4 16GB</h5>
+            <p class="card-text">Harga: Rp2.000.000</p>
+            <a href="detail.html?id=9" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Barang 10 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/9/2b6212c5-0b15-4a24-b7ba-29fe0f6e2a3a.jpg.webp?ect=4g/300" class="card-img-top" alt="Barang 10">
+          <div class="card-body">
+            <h5 class="card-title">Team RAM Delta DDR4 RGB </h5>
+            <p class="card-text">Harga: Rp2.500.000</p>
+            <a href="detail.html?id=10" class="btn btn-primary w-100">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2024 CORES STORE_AGUST.R_22552011313. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    // Fungsi Logout
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+      sessionStorage.removeItem('userLoggedIn');
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
